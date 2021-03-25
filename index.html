@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulos y parrafos</title>
 </head>
+<!--SECTION: Contenedor que agrupa contenido RELACIONADO CON EL PRINCIPAL
+ARTICLE: Contenedor de contenido independiente
+ASIDE: Contenedor de contenido relacionado pero no con el tema principal
+LOS SECTION Y ARTICLE PUEDEN TENER HEADER Y FOOTER-->
 <body>
     <header>
-        <!--SE IMPLEMENTA EL MENU DE NAVEGACION, LOGO, REDES SOCIALES, ETC-->
-        Inicio
-        Novelas
-        Peliculas
-        Contacto
+        <h1>NOTICIAS DEL NACIONALES</h1>
     </header>
-    <main> <!--CONTENIDO PRINCIPAL-->
-        <h1>Harry Potter</h1> 
-        <h2>Sinopsis</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nihil. Sed reiciendis incidunt ad tempora! Modi perferendis facilis qui sit recusandae explicabo quis, hic consequatur accusantium beatae optio nostrum? Nobis?</p> 
-        <h2>Novelas</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempora enim nesciunt tenetur reiciendis illo accusantium nobis temporibus mollitia alias rem voluptate dolor, nihil, expedita maxime laudantium. Mollitia, magni cupiditate.</p>
-        <h3>Harry Potter y la piedra Filosofal</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex obcaecati nesciunt veritatis eligendi id eveniet dolore, exercitationem totam sapiente accusamus sunt deserunt officiis soluta sed dicta harum inventore pariatur vitae.</p>
+    <main>
+        <!--SECTION CON ARTICLES ANIDADOS-->
+        <section>
+            <h2>Noticias del día</h2>
+            <article>
+                <header>
+                    <h3>Noticia 1</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus assumenda tenetur, facilis rerum ullam architecto asperiores mollitia nobis consequuntur consequatur doloremque, nisi nemo, reiciendis numquam fuga quod a sunt culpa!</p>  
+                <footer>
+                    Autor: Daniel Leon
+                </footer>              
+            </article>
+            <article>
+                <h3>Noticia 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae totam nostrum necessitatibus eveniet repudiandae? Necessitatibus, perspiciatis natus provident fugiat, iure assumenda magnam nostrum odit, incidunt dolor officia eum. Cupiditate, accusamus?</p>
+            </article>
+        </section>
+        <!--ARTICLE CON SECTIONS ANIDADOS-->
+        <article>
+            <h2>Navegadores más utilizados en 2021</h2>
+            <section>
+                <header>
+                    <h3>Chrome</h3> 
+                </header>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat, asperiores quam earum quasi vero, labore et quisquam in sit laborum similique iste, iure quos culpa quidem modi. Doloremque, quia!</p>
+                <footer>Creado por Google</footer>
+            </section>
+            <section>
+                <h3>Firefox</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid reiciendis, molestias, impedit deserunt quia ducimus dolore eius quibusdam alias debitis, itaque dolores eos quos libero modi aliquam! Distinctio, dolorum ipsa!</p>
+            </section>
+        </article>
     </main>
-    <footer>
-        <!--PIE DE PAGINA-->
-        Curso HTML 2021
-    </footer>
+    <!--ASIDE-->
+    <aside>Visita nuestro canal de noticias en Youtube</aside>
 </body>
 </html>
