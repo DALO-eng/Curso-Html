@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementos de línea</title>
+    <title>Atributos</title>
+
+    <style>
+        .parrafo_1{
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Elementos de línea</h1>
-    <!--
-        em -> emphasis
-        strong -> más enfasis
-        small -> Menos enfasis que el texto normal
-        br -> Forzar un salto de linea
-        wbr -> Salto de linea si hiciera falta
-        time -> Se usa para representar un contenido de hora/fecha
-        i -> Italic
-        b -> Bold
-        u -> Underline
-        sup -> Superindice
-        sub -> Subindice
-    -->
-    <p><em>El dinero</em> es importante pero <strong>la salud es lo más importante.</strong><small>Saludos!</small></p>
+    <p class="parrafo_1">Clases</p> <!--Class: funciona para conectar con CSS-->
+    <p id="parrafo">Identificador</p> <!--Id: funciona para relacionar elementos con JS-->
+    <p title="Ejemplo">Titulo con tooltip</p> <!--title: Muestra descripción del elemento-->
+    <p id="parrafo_2" data-ejemplo="Datos de ejemplo">Datos pasados en la etiqueta</p> <!--Util a la hora de JS-->
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum perferendis mollitia,<br> est soluta nisi molestias ea debitis dolor ipsum atque autem magni aut nam, reprehenderit corporis porro rem, iure repellat!</p>
-
-    <p>http://127.0.0.1:5500/<wbr>index.html</p>
-
-    <time>24/10/2020 10:35</time>
-
-    <p><i>Cursiva</i> <b>Negrilla</b> <u>Subrayado</u></p>
-
-    <p>H<sub>2</sub>0 4<sup>2</sup>=16</p>
+    <script>
+        const p = document.getElementById('parrafo')
+        const p2 = document.getElementById('parrafo_2')
+        console.log(p.textContent)
+        console.log(p2.dataset.ejemplo)
+    </script>
 </body>
 </html>
