@@ -4,53 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enlaces</title>
+    <title>Listas</title>
 </head>
+<!--LISTAS
+    ul: listas desordenadas
+    ol: Listas ordenadas
+    dl: Listas de definiciones: Diccionarios
+
+    Cada elemento de la lista se le pone un li
+    Para listas de definiciones:   dt -> titulo    dd -> Descripcion-->
 <body>
-    <h1>Home</h1>
-    <a href="prueba.html">Ir a prueba</a> <!--Ruta relativa-->
-    <a href="http://google.com">Ir a google</a> <!--Ruta absoluta-->
+    <h1>Listas</h1>
+    <h2>Lista de compras</h2>
+    <ul>
+        <li>Pan</li>
+        <li>Huevos</li>
+        <li>Leche</li>
+    </ul>
 
-    <!--ATRIBUTOS DE ENLACES:
-    target: Donde se abrirá el recurso solicitado
-    download: Descarga el recurso si está en tu mismo servidor-->
+    <h2>Lista de links</h2>
+    <ul>
+        <li><a href="#">Post 1</a></li>
+        <li><a href="#">Post 2</a></li>
+        <li><a href="#">Post 3</a></li>
+    </ul>
 
-    <br>
-    <a href="https://google.com" target="_blank">Ir a google</a>
-    <a href="prueba.html" download="">Descargar</a>
+    <h2>Orden de aprendizaje desarrollo web</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
 
-    <!--NAVEGAR EN LA MISMA PAGINA-->
-    
-    <h1>Blogs</h1>
-    <nav> <!--MENU DE NAVEGACION-->
-        <p><a href="#post_1">Post 1</a></p>
-        <p><a href="#post_2">Post 2</a></p>
-        <p><a href="#post_3">Post 3</a></p>
-        <p><a href="#post_4">Post 4</a></p>
-    </nav>
-    <article id="post_1">
-        <header>
-            <h2>Post 1</h2>
-        </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga ratione facilis voluptatum eveniet non, praesentium eligendi error! Itaque minima tempora qui ipsum est suscipit consequatur quasi debitis quas reiciendis?</p>
-    </article>
-    <article id="post_2">
-        <header>
-            <h2>Post 2</h2>
-        </header>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptates ab consequuntur id pariatur distinctio totam, facere excepturi consectetur eaque maxime obcaecati dolorum temporibus magnam, similique earum ipsa omnis ratione?</p>
-    </article>
-    <article id="post_3">
-        <header>
-            <h2>Post 3</h2>
-        </header>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptates ab consequuntur id pariatur distinctio totam, facere excepturi consectetur eaque maxime obcaecati dolorum temporibus magnam, similique earum ipsa omnis ratione?</p>
-    </article>
-    <article id="post_4">
-        <header>
-            <h2>Post 4</h2>
-        </header>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptates ab consequuntur id pariatur distinctio totam, facere excepturi consectetur eaque maxime obcaecati dolorum temporibus magnam, similique earum ipsa omnis ratione?</p>
-    </article>
+    <h2>Definiciones</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Languaje</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascade Style Sheet</dd>
+    </dl>
+
+    <!--ATRIBUTOS:
+        ul: type
+        ol: type & start-->
+    <h2>Lista de compras</h2>
+    <ul type="circle">
+        <li>Pan</li>
+        <li>Huevos</li>
+        <li>Leche</li>
+    </ul>   
+
+    <h2>Orden de aprendizaje desarrollo web</h2>
+    <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
 </body>
 </html>
