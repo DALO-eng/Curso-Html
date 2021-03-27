@@ -4,62 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas</title>
+    <title>Tablas</title>
+
+    <style>
+        col:nth-child(1){
+            background-color: royalblue;
+        }
+        col{
+            background-color: seagreen;
+        }
+
+    </style>
 </head>
-<!--LISTAS
-    ul: listas desordenadas
-    ol: Listas ordenadas
-    dl: Listas de definiciones: Diccionarios
+<!--TABLAS:
+    table: etiqueta que construye la tabla
+    tr: Filas
+    td: Celda
+    caption: Titulo de tabla
 
-    Cada elemento de la lista se le pone un li
-    Para listas de definiciones:   dt -> titulo    dd -> Descripcion-->
+    LAS TABLAS TIENE SECCION DE CONTENIDO:
+    thead (Se usa th para las celdas de la cabecera)
+    tbody
+    tfoot
+
+    ATRIBUTOS:
+    colspan: Alargar la columna
+    rowspan: Alargar la fila
+
+    COLGROUP:
+    Funciona para seleccionar columnas de la tabla, con col se indica el numero de columnas, el SPAN funciona para alargar la seleccion de solo un col-->
 <body>
-    <h1>Listas</h1>
-    <h2>Lista de compras</h2>
-    <ul>
-        <li>Pan</li>
-        <li>Huevos</li>
-        <li>Leche</li>
-    </ul>
+    <h1>Tablas</h1>
 
-    <h2>Lista de links</h2>
-    <ul>
-        <li><a href="#">Post 1</a></li>
-        <li><a href="#">Post 2</a></li>
-        <li><a href="#">Post 3</a></li>
-    </ul>
-
-    <h2>Orden de aprendizaje desarrollo web</h2>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
-
-    <h2>Definiciones</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Hypertext Markup Languaje</dd>
-
-        <dt>CSS</dt>
-        <dd>Cascade Style Sheet</dd>
-    </dl>
-
-    <!--ATRIBUTOS:
-        ul: type
-        ol: type & start-->
-    <h2>Lista de compras</h2>
-    <ul type="circle">
-        <li>Pan</li>
-        <li>Huevos</li>
-        <li>Leche</li>
-    </ul>   
-
-    <h2>Orden de aprendizaje desarrollo web</h2>
-    <ol type="A">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
+    <table>
+        <caption>Horario de Clases</caption>
+        <colgroup>
+            <col span="2">
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:30 - 9:30</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+                <td>Sociales</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+            </tr>
+            <tr>
+                <td>9:30 - 10:25</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Matemáticas</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>10:25 - 11:20</td>
+                <td>Educación Física</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Educación Física</td>
+            </tr>
+            <tr>
+                <td>11:20 - 11:45</td>
+                <td colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <td>11:45 - 12:40</td>
+                <td>Inglés</td>
+                <td>Sociales</td>
+                <td>Inglés</td>
+                <td>Tutoría</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:40 - 13:35</td>
+                <td rowspan="2">Tecnología</td>
+                <td>Educación Física</td>
+                <td>Plástica</td>
+                <td>Relegión</td>
+                <td rowspan="2">Tecnología</td>
+            </tr>
+            <tr>
+                <td>13:35 - 14:30</td>
+                <td>Francés</td>
+                <td>Tecnología</td>
+                <td>Francés</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de asignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
