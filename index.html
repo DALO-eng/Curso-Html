@@ -1,116 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
-
-    <style>
-        col:nth-child(1){
-            background-color: royalblue;
-        }
-        col{
-            background-color: seagreen;
-        }
-
-    </style>
+    <title>Otras etiquetas de bloque</title>
 </head>
-<!--TABLAS:
-    table: etiqueta que construye la tabla
-    tr: Filas
-    td: Celda
-    caption: Titulo de tabla
-
-    LAS TABLAS TIENE SECCION DE CONTENIDO:
-    thead (Se usa th para las celdas de la cabecera)
-    tbody
-    tfoot
-
-    ATRIBUTOS:
-    colspan: Alargar la columna
-    rowspan: Alargar la fila
-
-    COLGROUP:
-    Funciona para seleccionar columnas de la tabla, con col se indica el numero de columnas, el SPAN funciona para alargar la seleccion de solo un col-->
 <body>
-    <h1>Tablas</h1>
-
-    <table>
-        <caption>Horario de Clases</caption>
-        <colgroup>
-            <col span="2">
-            <col>
-            <col>
-        </colgroup>
-        <thead>
-            <tr>
-                <th></th>
-                <th>L</th>
-                <th>M</th>
-                <th>X</th>
-                <th>J</th>
-                <th>V</th>                
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>8:30 - 9:30</td>
-                <td>Matemáticas</td>
-                <td>Matemáticas</td>
-                <td>Sociales</td>
-                <td>Matemáticas</td>
-                <td>Matemáticas</td>
-            </tr>
-            <tr>
-                <td>9:30 - 10:25</td>
-                <td>Lengua</td>
-                <td>Lengua</td>
-                <td>Matemáticas</td>
-                <td>Ciencias</td>
-                <td>Lengua</td>
-            </tr>
-            <tr>
-                <td>10:25 - 11:20</td>
-                <td>Educación Física</td>
-                <td>Ciencias</td>
-                <td>Lengua</td>
-                <td>Lengua</td>
-                <td>Educación Física</td>
-            </tr>
-            <tr>
-                <td>11:20 - 11:45</td>
-                <td colspan="5">Recreo</td>
-            </tr>
-            <tr>
-                <td>11:45 - 12:40</td>
-                <td>Inglés</td>
-                <td>Sociales</td>
-                <td>Inglés</td>
-                <td>Tutoría</td>
-                <td>Inglés</td>
-            </tr>
-            <tr>
-                <td>12:40 - 13:35</td>
-                <td rowspan="2">Tecnología</td>
-                <td>Educación Física</td>
-                <td>Plástica</td>
-                <td>Relegión</td>
-                <td rowspan="2">Tecnología</td>
-            </tr>
-            <tr>
-                <td>13:35 - 14:30</td>
-                <td>Francés</td>
-                <td>Tecnología</td>
-                <td>Francés</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="5">Total de asignaturas</td>
-                <td>12</td>
-            </tr>
-        </tfoot>
-    </table>
+    <!--address: Información de contacto para el article más cercanco-->
+    <address>
+        Daniel León <br>
+        Cra 28 # 19-59
+    </address>
+    <!--blockquote: Marcar citas a otros autores-->
+    <blockquote cite="https://www.domestika.org/es">
+        <p>
+            La mayor comunidad online de creativos, una red formada por más de 5M profesionales con los que podrás intercambiar conocimientos.
+        </p>
+    </blockquote>
+    <!--pre: Tener el codigo preformateado-->
+    <pre>
+        Hola
+                ¿Qué tal?
+    </pre>
+    <!--div: División de documento, funciona más para estilos-->
+    <div>
+        <h2>Hombre</h2>
+        <p>Email</p>
+    </div>
+    <!--hr: Cambio de tema entre parrafos-->
+    <hr>
 </body>
 </html>
