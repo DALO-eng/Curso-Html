@@ -4,28 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otras etiquetas de linea</title>
-
-    <style>
-        span{
-            color: red;
-        }
-    </style>
+    <title>Formularios</title>
 </head>
+<!--Los formularios se componen de 4 elementos:
+    form: etiqueta del formulario
+    label: Escribe el nombre del campo a rellenar, tiene un for, el cual conecta al input mediante un id
+    input: Espacio de interacción
+    button: Botón que envía el formulario-->
 <body>
-    <!--span: Contenedor de linea, equivalene a div-->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, et. Odio reiciendis assumenda, <span>explicabo distinctio mollitia</span> deserunt voluptatem nisi, dolore quaerat neque molestiae reprehenderit fugiat suscipit facere amet architecto eveniet!</p>
+    <h1>Formato Formulario</h1>
+    <section>
+        <form>
+            <label for="name">Nombre:</label>
+            <input id="name">
+            <button>Enviar formulario</button> <!--ENVÍA FORMULARIO-->
+        </form>
+    </section>
 
-    <!--q: Citas de linea-->
-    <q>The Game</q>
-
-    <!--code: Señala codigo, va unido con pre-->
-    <pre>
-        <code>
-            span{
-                color: red;
-            }
-        </code>
-    </pre>
+    <h1>Tipos de Input</h1>
+    <section>
+        <h2>button</h2>
+        <form>
+            button
+            <input type="button" value="Enviar"> <!--NO ENVÍA EL FORMULARIO-->
+            submit
+            <input type="submit" value="Enviar Formulario"> <!--ENVÍA FORMULARIO-->
+        </form>
+    </section>
+    <br>
+    <section>
+        <h2>Fechas</h2>
+        <form>
+            date
+            <input type="date">
+            time
+            <input type="time">
+            month
+            <input type="month">
+            week
+            <input type="week">
+        </form>
+    </section>
+    <br>
+    <section>
+        <h2>Inputs que cambian en celular</h2>
+        <form>
+            <label>
+                search
+                <input type="search">
+            </label>
+            <label>
+                teléfono
+                <input type="tel">
+            </label>
+            <label>
+                email
+                <input type="email">
+            </label>
+            <label>
+                password
+                <input type="password">
+            </label>
+            <label>
+                url
+                <input type="url">
+            </label>
+        </form>
+    </section>
+    <br>
+    <section>
+        <h2>Otros tipos de input</h2>
+        <form>
+            color
+            <input type="color">
+            number
+            <input type="number">
+            range
+            <input type="range">
+            reset
+            <input type="reset">
+            text
+            <input type="text">
+        </form>
+    </section>
 </body>
 </html>
