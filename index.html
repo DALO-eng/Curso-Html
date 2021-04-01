@@ -1,89 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inputs de selección</title>
+    <title>Elementos de formularios</title>
 </head>
 <body>
-    <h1>Elementos seleccionables</h1>
-    <section>
-        <h2>Radio</h2>
-        <form>
-            <h3>Género:</h3>
-            <label>
-                Masculino
-                <input type="radio" name="gender" value="m">
-            </label>
-            <label>
-                Femenino
-                <input type="radio" name="gender" value="f">
-            </label>
-            <label>
-                No binario
-                <input type="radio" name="gender" value="n">
-            </label>
-            <!--name se usa para conectar los radios-->
-        </form>
-    </section>
-    <section>
-        <h2>Checkbox</h2>
-        <form>
-            <h3>Lenguajes que conoces</h3>
-            <label>
-                <input type="checkbox" name="languajes" value="hmtl">
-                HTML
-            </label>
-            <label>
-                <input type="checkbox" name="languajes" value="css">
-                CSS
-            </label>
-            <label>
-                <input type="checkbox" name="languajes" value="js">
-                JS
-            </label>
-        </form>
-    </section>
-    <section>
-        <h2>Select</h2>
-        <form>
-            <h3>Básico</h3>
-            <select name="lenguajes">
-                <option value="hmtl">HMTL</option>
-                <option value="css">CSS</option>
-                <option value="js">JS</option>
-            </select>
-        </form>
-        <form>
-            <h3>Avanzado</h3>
-            <select name="mascotas">
-                <optgroup label="4 patas">
-                    <option value="perro">Perro</option>
-                    <option value="gato">Gato</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="conejo">Conejo</option>
-                </optgroup>
-                <optgroup label="aves">
-                    <option value="loro">Loro</option>
-                    <option value="canario">Canario</option>
-                </optgroup>
-            </select>
-        </form>
-    </section>
-    <section>
-        <h2>Datalist</h2>
-        <form>
-            <input type="list" list="pets">
-            <datalist id="pets">
-                <option value="dog">Perro</option>
-                <option value="cat">Gato</option>
-                <option value="hamster">Hamster</option>
-                <option value="rabbit">Conejo</option>
-                <option value="loro">Loro</option>
-                <option value="canario">Canario</option>
-            </datalist>
-        </form>
-    </section>
+    <form>
+        <fieldset> <!--fieldset: CIERRA EL FORMULARIO-->
+            <legend>Datos personales</legend> <!--legend: TITULO PARA EL FIELDSET-->
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname">
+            </div>
+            <div>
+                <label for="file">Archivo</label>
+                <input type="file" id="file">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>meter y progress</legend>
+            <div>
+                <label for="fuel">Gasolina</label>
+                <meter id="fuel" min="0" max="100" value="60" low="30" high="70" optimum="50"></meter> <!--meter: Valor en un rango conocido-->
+             </div>
+             <div>
+                 <label for="task">Tarea</label>
+                 <progress id="task" max="100" value="10"></progress>
+                 <!--progress: Representa el progreso de una tarea-->
+             </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Textarea</legend>
+            <div>
+                <label for="text">Mensaje</label>
+                <textarea name="text" id="text" cols="10" rows="10"></textarea>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
