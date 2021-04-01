@@ -24,16 +24,33 @@
             <div>
                 Sexo:
                 <label for="male">
-                    <input type="radio" id="male" name="gender">Masculino
+                    <input type="radio" id="male" name="gender" value="masculino">Masculino
                 </label>
                 <label for="female">
-                    <input type="radio" id="female" name="gender">Femenino
+                    <input type="radio" id="female" name="gender" value="femenino">Femenino
                 </label>
             </div>
             <div>
                 <label for="email">
                     Email:
                     <input type="email" id="email" name="email">
+                </label>
+            </div>
+            <div>
+                <label for="living_place">
+                    Población:
+                    <select name="living_place" id="living_place">
+                        <option value="Alicante">Alicante</option>
+                        <option value="Madrid" selected>Madrid</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Valencia">Valencia</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="description">
+                    Descricpción:
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
                 </label>
             </div>
             <div>
