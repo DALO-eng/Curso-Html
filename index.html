@@ -4,130 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desempleo en España</title>
-    <style>
-        table, tr, th {
-          border: 1px solid black;
-        }
-    </style>
+    <title>Formulario de prueba de HTML5</title>
 </head>
 <body>
-    <main>
-        <h1>El desempleo en España</h1>
-        <p>La siguiente tabla muestra la evolución del desempleo en España, comparado con la media de los 27 países de la Unión Europea, Grecia, que compite con España en ser el primero en esta vergonzosa competición y Estados Unidos y Japón, dos de las primeras economías mundiales.</p>
+    <h1>Formulario final</h1>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>País</th>
-                    <th>2000</th>
-                    <th>2001</th>
-                    <th>2002</th>
-                    <th>2003</th>
-                    <th>2004</th>
-                    <th>2005</th>
-                    <th>2006</th>
-                    <th>2007</th>
-                    <th>2008</th>
-                    <th>2009</th>
-                    <th>2010</th>
-                    <th>2011</th>
-                    <th>2012</th>
-                    <th>2013</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>UE (27 países)</th>
-                    <th>8.9</th>
-                    <th>8.7</th>
-                    <th>9</th>
-                    <th>9.1</th>
-                    <th>9.3</th>
-                    <th>9</th>
-                    <th>8.2</th>
-                    <th>7.2</th>
-                    <th>7</th>
-                    <th>9</th>
-                    <th>9.6</th>
-                    <th>9.6</th>
-                    <th>10.4</th>
-                    <th>10.8</th>
-                </tr>
-                <tr>
-                    <th>España</th>
-                    <th>8.9</th>
-                    <th>8.7</th>
-                    <th>9</th>
-                    <th>9.1</th>
-                    <th>9.3</th>
-                    <th>9</th>
-                    <th>8.2</th>
-                    <th>7.2</th>
-                    <th>7</th>
-                    <th>9</th>
-                    <th>9.6</th>
-                    <th>9.6</th>
-                    <th>10.4</th>
-                    <th>10.8</th>
-                </tr>
-                <tr>
-                    <th>Grecia</th>
-                    <th>8.9</th>
-                    <th>8.7</th>
-                    <th>9</th>
-                    <th>9.1</th>
-                    <th>9.3</th>
-                    <th>9</th>
-                    <th>8.2</th>
-                    <th>7.2</th>
-                    <th>7</th>
-                    <th>9</th>
-                    <th>9.6</th>
-                    <th>9.6</th>
-                    <th>10.4</th>
-                    <th>10.8</th>
-                </tr>
-                <tr>
-                    <th>Estados Unidos</th>
-                    <th>8.9</th>
-                    <th>8.7</th>
-                    <th>9</th>
-                    <th>9.1</th>
-                    <th>9.3</th>
-                    <th>9</th>
-                    <th>8.2</th>
-                    <th>7.2</th>
-                    <th>7</th>
-                    <th>9</th>
-                    <th>9.6</th>
-                    <th>9.6</th>
-                    <th>10.4</th>
-                    <th>10.8</th>
-                </tr>
-                <tr>
-                    <th>Japón</th>
-                    <th>8.9</th>
-                    <th>8.7</th>
-                    <th>9</th>
-                    <th>9.1</th>
-                    <th>9.3</th>
-                    <th>9</th>
-                    <th>8.2</th>
-                    <th>7.2</th>
-                    <th>7</th>
-                    <th>9</th>
-                    <th>9.6</th>
-                    <th>9.6</th>
-                    <th>10.4</th>
-                    <th>10.8</th>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-    <footer>
-        <p>Fuente: <a href="http://epp.eurostat.ec.europa.eu/tgm/table.do?tab=table&init=1&language=en&pcode=tsdec450&plugin=1" target="_blank">Índice de desempleo anual</a>, Eurostat</p>
-    </footer>
-    
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Formulario Final</legend>
+            <label for="name">
+                Nombre:
+                <input type="text" id="name" name="name" autofocus required>
+            </label>
+            <label for="email">
+                Email:
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="url">
+                Url:
+                <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal">
+            </label>
+            <label for="date">
+                Fecha:
+                <input type="date" id="date" name="date">
+            </label>
+            <label for="time">
+                Hora:
+                <input type="time" id="time" name="time">
+            </label>
+            <label for="datetime">
+                Fecha y Hora:
+                <input type="datetime" id="datetime" name="datetime">
+            </label>
+            <label for="month">
+                Mes:
+                <input type="month" id="month" name="month">
+            </label>
+            <label for="week">
+                Semana:
+                <input type="week" id="week" name="week">
+            </label>
+            <label for="num">
+                Número:
+                <input type="number" id="num" name="number" min="-10" max="10">
+            </label>
+            <label for="phone">
+                Teléfono:
+                <input type="tel" id="phone" name="phone">
+            </label>
+            <label for="search">
+                Termino de busqueda:
+                <input type="search" id="search" name="search">
+            </label>
+            <label for="color">
+                Color favorito:
+                <input type="color" id="color" name="color">
+            </label>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
 </body>
 </html>
