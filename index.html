@@ -4,51 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internet</title>
+    <title>Formulario de registro - Mi web</title>
 </head>
 <body>
-    <header>
-        <h1>Internet</h1>
-        <h2>Contenido</h2>
-        <nav>
-            <ol>
-                <li>Principales protocolos</li>
-                <li>Formas de conectarse</li>
-            </ol>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <header>
-                <h2>1. Principales Protocolos</h2>
-            </header>
-            <ul>
-                <li>
-                    Transmisión de ficheros:
-                    <ul>
-                        <li>FTP</li>
-                    </ul>
-                </li>
-                <li>
-                    Correo electrónico:
-                    <ul>
-                        <li>IMAP</li>
-                        <li>POP</li>
-                        <li>SMTP</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>2. Formas de conectarse</h2>
-            <dl>
-                <dt>Red Telefónica Conmutada (RTC)</dt>
-                <dd>La línea Telefónica de toda la vida. Para acceder a Internet es necesario un módem.</dd>
-
-                <dt>Red Digital de Servicios Integrados (RDSI)</dt>
-                <dd>Una línea telefónica especial. Para acceder a Internet es necesario in módem RDSI.</dd>
-            </dl>
-        </section>
-    </main>
+    <h1>Formulario de registro</h1> 
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Formulario 1</legend>
+            <div>
+                <label for="name">
+                    Nombre:
+                    <input type="text" id="name" name="name" maxlength="50">
+                </label>
+                <label for="surname">
+                    Apellido:
+                    <input type="text" id="surname" name="surname" maxlength="50">
+                </label>
+            </div>
+            <div>
+                Sexo:
+                <label for="male">
+                    <input type="radio" id="male" name="gender">Masculino
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender">Femenino
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    Email:
+                    <input type="email" id="email" name="email">
+                </label>
+            </div>
+            <div>
+                <label for="info">
+                    <input type="checkbox" id="info" name="info" checked>
+                    Deseo recibir información sobre novedades y ofertas.
+                </label>
+                <br>
+                <label for="confirm">
+                    <input type="checkbox" id="confirm" name="confirm">
+                    Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos.
+                </label>
+            </div>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>  
 </body>
 </html>
