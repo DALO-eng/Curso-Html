@@ -1,90 +1,88 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>inputs de selección</title>
 </head>
-<!--Los formularios se componen de 4 elementos:
-    form: etiqueta del formulario
-    label: Escribe el nombre del campo a rellenar, tiene un for, el cual conecta al input mediante un id
-    input: Espacio de interacción
-    button: Botón que envía el formulario-->
 <body>
-    <h1>Formato Formulario</h1>
+    <h1>Elementos seleccionables</h1>
     <section>
+        <h2>Radio</h2>
         <form>
-            <label for="name">Nombre:</label>
-            <input id="name">
-            <button>Enviar formulario</button> <!--ENVÍA FORMULARIO-->
+            <h3>Género:</h3>
+            <label>
+                Masculino
+                <input type="radio" name="gender" value="m">
+            </label>
+            <label>
+                Femenino
+                <input type="radio" name="gender" value="f">
+            </label>
+            <label>
+                No binario
+                <input type="radio" name="gender" value="n">
+            </label>
+            <!--name se usa para conectar los radios-->
         </form>
     </section>
-
-    <h1>Tipos de Input</h1>
     <section>
-        <h2>button</h2>
+        <h2>Checkbox</h2>
         <form>
-            button
-            <input type="button" value="Enviar"> <!--NO ENVÍA EL FORMULARIO-->
-            submit
-            <input type="submit" value="Enviar Formulario"> <!--ENVÍA FORMULARIO-->
-        </form>
-    </section>
-    <br>
-    <section>
-        <h2>Fechas</h2>
-        <form>
-            date
-            <input type="date">
-            time
-            <input type="time">
-            month
-            <input type="month">
-            week
-            <input type="week">
-        </form>
-    </section>
-    <br>
-    <section>
-        <h2>Inputs que cambian en celular</h2>
-        <form>
+            <h3>Lenguajes que conoces</h3>
             <label>
-                search
-                <input type="search">
+                <input type="checkbox" name="languajes" value="hmtl">
+                HTML
             </label>
             <label>
-                teléfono
-                <input type="tel">
+                <input type="checkbox" name="languajes" value="css">
+                CSS
             </label>
             <label>
-                email
-                <input type="email">
-            </label>
-            <label>
-                password
-                <input type="password">
-            </label>
-            <label>
-                url
-                <input type="url">
+                <input type="checkbox" name="languajes" value="js">
+                JS
             </label>
         </form>
     </section>
-    <br>
     <section>
-        <h2>Otros tipos de input</h2>
+        <h2>Select</h2>
         <form>
-            color
-            <input type="color">
-            number
-            <input type="number">
-            range
-            <input type="range">
-            reset
-            <input type="reset">
-            text
-            <input type="text">
+            <h3>Básico</h3>
+            <select name="lenguajes">
+                <option value="hmtl">HMTL</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+            </select>
+        </form>
+        <form>
+            <h3>Avanzado</h3>
+            <select name="mascotas">
+                <optgroup label="4 patas">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="conejo">Conejo</option>
+                </optgroup>
+                <optgroup label="aves">
+                    <option value="loro">Loro</option>
+                    <option value="canario">Canario</option>
+                </optgroup>
+            </select>
+        </form>
+    </section>
+    <section>
+        <h2>Datalist</h2>
+        <form>
+            <input type="list" list="pets">
+            <datalist id="pets">
+                <option value="dog">Perro</option>
+                <option value="cat">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="rabbit">Conejo</option>
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+            </datalist>
         </form>
     </section>
 </body>
