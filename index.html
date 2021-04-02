@@ -1,49 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementos de formularios</title>
+    <title>Contenido embebido</title>
 </head>
 <body>
-    <form>
-        <fieldset> <!--fieldset: CIERRA EL FORMULARIO-->
-            <legend>Datos personales</legend> <!--legend: TITULO PARA EL FIELDSET-->
-            <div>
-                <label for="name">Nombre</label>
-                <input type="text" id="name">
-            </div>
-            <div>
-                <label for="surname">Apellido</label>
-                <input type="text" id="surname">
-            </div>
-            <div>
-                <label for="file">Archivo</label>
-                <input type="file" id="file">
-            </div>
-        </fieldset>
+    <!--Poner imágenes de forma clásica-->
+    <img src="/assets/images/dados.png" alt="Dados" width="300">
 
-        <fieldset>
-            <legend>meter y progress</legend>
-            <div>
-                <label for="fuel">Gasolina</label>
-                <meter id="fuel" min="0" max="100" value="60" low="30" high="70" optimum="50"></meter> <!--meter: Valor en un rango conocido-->
-             </div>
-             <div>
-                 <label for="task">Tarea</label>
-                 <progress id="task" max="100" value="10"></progress>
-                 <!--progress: Representa el progreso de una tarea-->
-             </div>
-        </fieldset>
+    <!--srcset: carga cierta imagen dependiendo del tamaño de la web-->
+    <img srcset="/assets/images/dados.png, /assets/images/dados9.png 2x" alt="dados">
 
-        <fieldset>
-            <legend>Textarea</legend>
-            <div>
-                <label for="text">Mensaje</label>
-                <textarea name="text" id="text" cols="10" rows="10"></textarea>
-            </div>
-        </fieldset>
-    </form>
+    <!--Otra forma más moderna es con picture-->
+
+    <!--AUDIO-->
+    <audio src="/assets/audio/vuela_pegaso.mp3" controls autoplay muted></audio>
+    <!--VIDEO-->
+    <video src="/assets/video/11-4_LA1-1030254104_02.webm" controls autoplay></video>
+
+    <!--IFRAME-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qQzdAsjWGPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--FIGURE: Imagen opcional-->
 </body>
 </html>
